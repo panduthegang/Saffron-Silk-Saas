@@ -1,0 +1,56 @@
+/* 1. Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@200;300;400;500;600&display=swap');
+
+/* 2. Tailwind Directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 3. Base Styles */
+@layer base {
+  body {
+    background-color: #050505;
+    color: #FFF5D6; /* Gold-100 */
+    overflow-x: hidden;
+  }
+}
+
+/* 4. Custom Utilities */
+@layer utilities {
+  /* Full screen noise overlay helper */
+  .noise-overlay {
+    @apply fixed inset-0 w-full h-full pointer-events-none z-[9998] opacity-5 bg-noise;
+  }
+
+  /* Shimmering Gold Text */
+  .text-gradient-gold {
+    background: linear-gradient(to right, #F0DEAA, #D4AF37, #F0DEAA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% auto;
+    animation: shine 4s linear infinite;
+    padding-bottom: 0.1em; /* Fix for clipped descenders */
+  }
+}
+
+/* 5. Keyframes & Scrollbars (Standard CSS) */
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #050505; 
+}
+::-webkit-scrollbar-thumb {
+  background: #333; 
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #D4AF37; 
+}
