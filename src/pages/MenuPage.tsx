@@ -251,13 +251,33 @@ const MenuPage: React.FC = () => {
                 <MenuSection title="Accompaniments" items={breadsRice} />
                 <MenuSection title="Finale" items={desserts} />
 
-                <div className="text-center mt-20 p-12 border border-gold-500/20 bg-emerald-950/20">
-                    <p className="text-white/60 mb-6 font-serif italic text-lg">
-                        "Our menu is an ode to the earth, crafted with reverence for nature's bounty."
-                    </p>
-                    <button className="px-10 py-4 bg-transparent border border-gold-500 text-gold-500 font-bold tracking-widest uppercase hover:bg-gold-500 hover:text-midnight transition-all duration-300">
-                        Download Full Menu (PDF)
-                    </button>
+                {/* New Section Replacement */}
+                <div className="mt-32 relative py-24 border border-white/5 bg-white/5 overflow-hidden group">
+                    {/* Background Effects */}
+                    <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-5"></div>
+                    <div className="absolute -right-20 -top-20 w-96 h-96 bg-gold-500/10 rounded-full blur-[100px] group-hover:bg-gold-500/20 transition-colors duration-700"></div>
+                    <div className="absolute -left-20 -bottom-20 w-96 h-96 bg-emerald-900/20 rounded-full blur-[100px] group-hover:bg-emerald-900/30 transition-colors duration-700"></div>
+                    
+                    <div className="text-center max-w-3xl mx-auto relative z-10 px-6">
+                        <div className="mb-8 flex justify-center">
+                             <div className="w-16 h-16 border border-gold-500/30 rotate-45 flex items-center justify-center transition-transform duration-700 group-hover:rotate-90">
+                                 <div className="w-10 h-10 border border-white/20"></div>
+                             </div>
+                        </div>
+                        <span className="text-gold-500 tracking-[0.4em] uppercase text-xs font-bold mb-4 block">Perfect Harmony</span>
+                        <h3 className="text-4xl md:text-5xl font-decorative text-white mb-8">The Sommelier's Reserve</h3>
+                        <p className="text-white/60 leading-loose font-serif text-xl italic mb-10">
+                            "To dine without wine is like dancing without music. Our cellar houses rare vintages and artisanal botanical infusions, curated to dance perfectly with our spices."
+                        </p>
+                        <div className="flex flex-col md:flex-row justify-center gap-6">
+                            <button className="px-12 py-4 bg-transparent border border-gold-500 text-gold-500 font-bold tracking-widest uppercase hover:bg-gold-500 hover:text-midnight transition-all duration-300">
+                                View Wine List
+                            </button>
+                             <button className="px-12 py-4 border border-white/20 text-white font-bold tracking-widest uppercase hover:border-gold-500 hover:text-gold-500 transition-all duration-300">
+                                Botanical Elixirs
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
             <Footer />
