@@ -60,26 +60,26 @@ const Hero = () => {
   );
 };
 
-// --- Signature Dishes ---
+// --- Signature Dishes (Vegetarian Only) ---
 const SignatureDishes = () => {
   const dishes = [
     {
-      name: "Truffle Butter Chicken",
-      desc: "Smoked tandoori chicken simmered in a velvet tomato gravy, finished with Italian black truffle oil.",
-      price: "$45",
-      img: "https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?q=80&w=1000&auto=format&fit=crop"
+      name: "Truffle Paneer Tikka",
+      desc: "Artisanal cottage cheese marinated in saffron and smoked spices, grilled to perfection with Italian black truffle oil.",
+      price: "$38",
+      img: "https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?q=80&w=1000&auto=format&fit=crop"
     },
     {
-      name: "Gold Leaf Biryani",
-      desc: "Aged basmati rice layered with saffron-infused lamb, sealed in pastry and topped with 24k edible gold.",
-      price: "$85",
+      name: "Gold Leaf Vegetable Biryani",
+      desc: "Aged basmati rice layered with seasonal vegetables and saffron, sealed in pastry and topped with 24k edible gold.",
+      price: "$65",
       img: "https://images.unsplash.com/photo-1589302168068-964664d93dc0?q=80&w=1000&auto=format&fit=crop"
     },
     {
-      name: "Scallop Moilee",
-      desc: "Pan-seared Atlantic scallops swimming in a coconut and turmeric curry, garnished with curry leaf crisp.",
-      price: "$55",
-      img: "https://images.unsplash.com/photo-1599043513900-424f7240b27e?q=80&w=1000&auto=format&fit=crop"
+      name: "Royal Mushroom Handi",
+      desc: "Wild mushrooms slow-cooked in a creamy cashew and saffron gravy, infused with aromatic truffle essence.",
+      price: "$45",
+      img: "https://images.unsplash.com/photo-1631452180519-c014fe946bc7?q=80&w=1000&auto=format&fit=crop"
     }
   ];
 
@@ -192,23 +192,60 @@ const Features = () => {
 // --- Chef Teaser ---
 const ChefTeaser = () => {
     return (
-        <section className="relative h-[80vh] flex items-center bg-midnight overflow-hidden">
-             <div className="absolute inset-0 w-full h-full">
-                <img src="https://images.unsplash.com/photo-1556910103-1c02745a30bf?q=80&w=2670&auto=format&fit=crop" className="w-full h-full object-cover opacity-40 grayscale hover:grayscale-0 transition-all duration-[2s]" alt="Chef" />
-                <div className="absolute inset-0 bg-gradient-to-r from-midnight via-midnight/80 to-transparent"></div>
-             </div>
+        <section className="relative min-h-[90vh] flex items-center bg-midnight overflow-hidden py-20">
+             {/* Background decorative elements */}
+             <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-emerald-950/30 to-transparent z-0"></div>
              
              <div className="container mx-auto px-6 relative z-10">
-                 <div className="max-w-xl">
-                     <span className="text-gold-500 tracking-[0.4em] uppercase text-sm mb-4 block">The Visionary</span>
-                     <h2 className="text-5xl md:text-7xl font-decorative text-white mb-6">Chef <span className="text-transparent bg-clip-text bg-gradient-to-r from-saffron-500 to-gold-500 pb-2 inline-block">Arjun</span> Mehta</h2>
-                     <p className="text-xl text-white/80 font-serif italic mb-8">"Cooking is not just chemistry, it is an emotion. We serve memories on a plate."</p>
-                     <p className="text-white/60 leading-relaxed mb-10">
-                         With 20 years of experience in the world's finest kitchens, Chef Mehta brings a progressive approach to traditional Indian flavors.
-                     </p>
-                     <a href="#/about" className="inline-block px-10 py-4 border border-gold-500 text-gold-500 hover:bg-gold-500 hover:text-midnight transition-all duration-300 uppercase tracking-widest text-sm font-bold">
-                         Meet the Team
-                     </a>
+                 <div className="flex flex-col lg:flex-row items-center gap-16">
+                     
+                     {/* Text Content */}
+                     <div className="w-full lg:w-1/2">
+                         <div className="mb-6">
+                            <span className="text-gold-500 tracking-[0.4em] uppercase text-sm font-bold flex items-center gap-4">
+                                <span className="w-12 h-[1px] bg-gold-500"></span>
+                                The Visionary
+                            </span>
+                         </div>
+                         <h2 className="text-6xl md:text-8xl font-decorative text-white mb-8 leading-none">
+                            Vikas <br />
+                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-saffron-500 to-gold-500 pb-4 inline-block">Khanna</span>
+                         </h2>
+                         <blockquote className="border-l-2 border-gold-500 pl-6 mb-10">
+                             <p className="text-2xl text-white/80 font-serif italic leading-relaxed">
+                                "Indian cuisine is a vast ocean. My mission is to bring the pearls from the depths to the surface of the world's plate."
+                             </p>
+                         </blockquote>
+                         <p className="text-white/60 leading-relaxed mb-12 text-lg font-light max-w-xl">
+                             A Michelin-starred maestro, Chef Vikas blends the ancient traditions of the spice route with modern culinary artistry. His philosophy is simple: honor the ingredient, respect the history, and innovate the experience.
+                         </p>
+                         <div className="flex gap-6">
+                             <a href="#/about" className="px-10 py-4 bg-gold-500 text-midnight font-bold tracking-widest uppercase hover:bg-white transition-all duration-300">
+                                 Our Story
+                             </a>
+                             <button className="px-10 py-4 border border-white/20 text-white font-bold tracking-widest uppercase hover:border-gold-500 hover:text-gold-500 transition-all duration-300">
+                                 Masterclass
+                             </button>
+                         </div>
+                     </div>
+
+                     {/* Image Content */}
+                     <div className="w-full lg:w-1/2 relative">
+                        <div className="relative z-10 border border-white/10 p-4 bg-white/5 backdrop-blur-sm transform rotate-2 hover:rotate-0 transition-all duration-700 group">
+                             <img 
+                                src="https://www.cookandchefinstitute.com/sites/default/files/styles/800x915/public/vikas_0.jpg?itok=21mDXRYT" 
+                                alt="Chef Vikas Khanna" 
+                                className="w-full h-[600px] object-cover object-top filter sepia-[0.2] group-hover:sepia-0 transition-all duration-700"
+                             />
+                             <div className="absolute bottom-10 -left-10 bg-midnight border border-gold-500/30 p-6 shadow-2xl hidden md:block">
+                                 <p className="text-gold-500 font-serif text-3xl mb-1">25+</p>
+                                 <p className="text-white/50 text-xs tracking-widest uppercase">Years of Excellence</p>
+                             </div>
+                        </div>
+                        
+                        {/* Decorative background circle behind image */}
+                        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] border border-gold-500/20 rounded-full animate-slow-spin -z-10 border-dashed"></div>
+                     </div>
                  </div>
              </div>
         </section>
@@ -276,25 +313,23 @@ const Testimonials = () => {
   );
 };
 
-// --- Reservations Parallax ---
-const ReservationTeaser = () => (
+// --- Private Events / The Royal Chambers ---
+const PrivateEvents = () => (
     <section className="relative py-40 flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
-             <img src="https://images.unsplash.com/photo-1544148103-0773bf10d330?q=80&w=2670&auto=format&fit=crop" className="w-full h-full object-cover opacity-30 fixed-bg" alt="Table" />
-             <div className="absolute inset-0 bg-gradient-to-t from-midnight via-transparent to-midnight"></div>
+             <img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?q=80&w=2698&auto=format&fit=crop" className="w-full h-full object-cover opacity-40 fixed-bg" alt="Private Dining" />
+             <div className="absolute inset-0 bg-gradient-to-t from-midnight via-midnight/50 to-midnight"></div>
         </div>
         <div className="relative z-10 text-center max-w-4xl px-6">
-            <h2 className="text-5xl md:text-7xl font-decorative text-white mb-8">Secure Your Experience</h2>
-            <p className="text-white/70 text-lg mb-12">Limited seating available for the upcoming season. We invite you to be part of our legacy.</p>
-            <div className="flex flex-col md:flex-row gap-6 justify-center">
-                 <input type="date" className="bg-white/10 border border-white/20 px-6 py-4 text-white focus:border-gold-500 focus:outline-none backdrop-blur-md" />
-                 <select className="bg-white/10 border border-white/20 px-6 py-4 text-white focus:border-gold-500 focus:outline-none backdrop-blur-md min-w-[200px]">
-                     <option className="text-midnight">2 Guests</option>
-                     <option className="text-midnight">4 Guests</option>
-                     <option className="text-midnight">Private Room</option>
-                 </select>
-                 <button className="bg-gold-500 text-midnight font-bold px-10 py-4 uppercase tracking-widest hover:bg-white transition-colors">Find Table</button>
-            </div>
+            <span className="text-saffron-500 tracking-[0.4em] uppercase text-sm font-bold mb-4 block animate-fade-in-up">Intimate Gatherings</span>
+            <h2 className="text-5xl md:text-7xl font-decorative text-white mb-8 animate-fade-in-up" style={{animationDelay: '0.1s'}}>The Royal Chambers</h2>
+            <p className="text-white/70 text-lg mb-12 leading-loose font-light animate-fade-in-up" style={{animationDelay: '0.2s'}}>
+                For those seeking a sanctuary of privacy. Our exclusive suites offer a bespoke dining experience, tailored to your exact desires.
+                From menu curation to floral arrangements, we orchestrate every detail.
+            </p>
+            <button className="px-12 py-5 bg-transparent border border-gold-500 text-gold-500 font-bold tracking-widest uppercase hover:bg-gold-500 hover:text-midnight transition-all duration-300 animate-fade-in-up" style={{animationDelay: '0.3s'}}>
+                Inquire for Events
+            </button>
         </div>
     </section>
 )
@@ -309,7 +344,7 @@ const LandingPage: React.FC = () => {
       <ChefTeaser />
       <Marquee />
       <Testimonials />
-      <ReservationTeaser />
+      <PrivateEvents />
       <Footer />
     </div>
   );
