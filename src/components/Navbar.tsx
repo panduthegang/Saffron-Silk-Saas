@@ -58,6 +58,10 @@ const Navbar: React.FC = () => {
                <span className="block" data-text="Legacy">Legacy</span>
                <span className="absolute left-0 -bottom-1 w-full h-[1px] bg-gold-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-right group-hover:origin-left"></span>
             </Link>
+            <Link to="/menu" className={linkClasses('/menu')}>
+               <span className="block" data-text="Menu">Menu</span>
+               <span className="absolute left-0 -bottom-1 w-full h-[1px] bg-gold-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-right group-hover:origin-left"></span>
+            </Link>
             <button className="relative px-8 py-3 bg-transparent border border-gold-500/50 text-gold-500 text-xs font-bold tracking-[0.2em] uppercase overflow-hidden group hover:border-gold-500 transition-colors duration-500">
               <span className="absolute inset-0 w-0 bg-gold-500 transition-all duration-[250ms] ease-out group-hover:w-full opacity-10"></span>
               <span className="relative group-hover:text-gold-200 transition-colors">Reserve</span>
@@ -86,7 +90,7 @@ const Navbar: React.FC = () => {
           <div className="flex flex-col items-center gap-12 relative z-10">
               <Link to="/" className="text-4xl font-decorative text-white hover:text-gold-500 transition-colors duration-300">Sanctuary</Link>
               <Link to="/about" className="text-4xl font-decorative text-white hover:text-gold-500 transition-colors duration-300">Legacy</Link>
-              <a href="#" className="text-4xl font-decorative text-white hover:text-gold-500 transition-colors duration-300">Menu</a>
+              <Link to="/menu" className="text-4xl font-decorative text-white hover:text-gold-500 transition-colors duration-300">Menu</Link>
               <div className="w-12 h-[1px] bg-white/10"></div>
               <button className="px-12 py-4 bg-gold-500 text-midnight font-bold tracking-[0.2em] uppercase hover:bg-white transition-colors duration-300">
                   Reserve Table

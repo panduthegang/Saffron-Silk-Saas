@@ -4,23 +4,23 @@ import { Link } from 'react-router-dom';
 const Footer: React.FC = () => {
   return (
     <footer className="bg-charcoal border-t border-white/5 pt-24 pb-12 relative overflow-hidden">
-        {/* Background Pattern */}
-        <div className="absolute top-0 left-0 w-full h-full opacity-[0.03] pointer-events-none">
-            <svg width="100%" height="100%">
-                <pattern id="footer-pattern" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
-                    <circle cx="2" cy="2" r="1" fill="#D4AF37" />
-                </pattern>
-                <rect x="0" y="0" width="100%" height="100%" fill="url(#footer-pattern)" />
-            </svg>
-        </div>
+      {/* Background Pattern */}
+      <div className="absolute top-0 left-0 w-full h-full opacity-[0.03] pointer-events-none">
+        <svg width="100%" height="100%">
+          <pattern id="footer-pattern" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+            <circle cx="2" cy="2" r="1" fill="#D4AF37" />
+          </pattern>
+          <rect x="0" y="0" width="100%" height="100%" fill="url(#footer-pattern)" />
+        </svg>
+      </div>
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-16 mb-20">
-          
+
           <div className="space-y-6">
             <div className="flex flex-col">
-                <span className="text-3xl font-serif tracking-wider text-white">SAFFRON</span>
-                <span className="text-xs tracking-[0.4em] text-gold-500 uppercase">& Silk</span>
+              <span className="text-3xl font-serif tracking-wider text-white">SAFFRON</span>
+              <span className="text-xs tracking-[0.4em] text-gold-500 uppercase">& Silk</span>
             </div>
             <p className="text-white/40 text-sm leading-relaxed font-light">
               Experience the symphony of authentic Indian spices and modern luxury. A culinary journey beyond boundaries.
@@ -32,7 +32,7 @@ const Footer: React.FC = () => {
             <ul className="space-y-4 text-sm text-white/60">
               <li><Link to="/" className="hover:text-gold-400 transition-colors">Home</Link></li>
               <li><Link to="/about" className="hover:text-gold-400 transition-colors">Our Heritage</Link></li>
-              <li><a href="#" className="hover:text-gold-400 transition-colors">Menu</a></li>
+              <li><Link to="/menu" className="hover:text-gold-400 transition-colors">Menu</Link></li>
               <li><a href="#" className="hover:text-gold-400 transition-colors">Private Dining</a></li>
             </ul>
           </div>

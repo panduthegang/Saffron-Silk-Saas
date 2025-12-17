@@ -3,6 +3,7 @@ import { HashRouter, Routes, Route, useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import LandingPage from './pages/LandingPage';
 import AboutPage from './pages/AboutPage';
+import MenuPage from './pages/MenuPage';
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -23,6 +24,7 @@ const App: React.FC = () => {
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/about" element={<AboutPage />} />
+          <Route path="/menu" element={<MenuPage />} />
         </Routes>
       </div>
     </HashRouter>
