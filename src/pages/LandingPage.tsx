@@ -43,10 +43,10 @@ const Hero = () => {
           Transcending boundaries with a symphony of spices. A culinary theatre where history meets modern luxury.
         </p>
         <div className="flex flex-col md:flex-row gap-8 justify-center items-center animate-fade-in-up" style={{ animationDelay: '0.8s' }}>
-          <button className="group relative px-12 py-4 bg-gold-500 text-midnight font-bold tracking-widest uppercase overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-[0_0_40px_rgba(212,175,55,0.4)]">
+          <Link to="/reserve" className="group relative px-12 py-4 bg-gold-500 text-midnight font-bold tracking-widest uppercase overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-[0_0_40px_rgba(212,175,55,0.4)] flex items-center justify-center">
             <span className="relative z-10">Reserve Table</span>
             <div className="absolute inset-0 bg-white/20 transform -skew-x-12 -translate-x-full group-hover:animate-shine"></div>
-          </button>
+          </Link>
           <Link to="/menu" className="px-12 py-4 border border-white/20 text-white font-medium tracking-widest uppercase hover:border-gold-500 hover:text-gold-500 transition-all duration-300 backdrop-blur-sm inline-block">
             View Menu
           </Link>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Footer from '../components/Footer';
 
 const MenuHero = () => (
@@ -129,9 +130,9 @@ const TastingMenu = () => (
                 <div>
                     <span className="text-3xl font-decorative text-gold-500 block">$185 <span className="text-base font-sans text-white/40 tracking-widest uppercase">per guest</span></span>
                 </div>
-                <button className="px-8 py-3 border border-white/20 text-white hover:text-gold-500 hover:border-gold-500 transition-all uppercase tracking-widest text-xs">
+                <Link to="/reserve" className="px-8 py-3 border border-white/20 text-white hover:text-gold-500 hover:border-gold-500 transition-all uppercase tracking-widest text-xs inline-block">
                     Reserve Experience
-                </button>
+                </Link>
             </div>
         </div>
     </div>
@@ -257,12 +258,12 @@ const MenuPage: React.FC = () => {
                     <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-5"></div>
                     <div className="absolute -right-20 -top-20 w-96 h-96 bg-gold-500/10 rounded-full blur-[100px] group-hover:bg-gold-500/20 transition-colors duration-700"></div>
                     <div className="absolute -left-20 -bottom-20 w-96 h-96 bg-emerald-900/20 rounded-full blur-[100px] group-hover:bg-emerald-900/30 transition-colors duration-700"></div>
-                    
+
                     <div className="text-center max-w-3xl mx-auto relative z-10 px-6">
                         <div className="mb-8 flex justify-center">
-                             <div className="w-16 h-16 border border-gold-500/30 rotate-45 flex items-center justify-center transition-transform duration-700 group-hover:rotate-90">
-                                 <div className="w-10 h-10 border border-white/20"></div>
-                             </div>
+                            <div className="w-16 h-16 border border-gold-500/30 rotate-45 flex items-center justify-center transition-transform duration-700 group-hover:rotate-90">
+                                <div className="w-10 h-10 border border-white/20"></div>
+                            </div>
                         </div>
                         <span className="text-gold-500 tracking-[0.4em] uppercase text-xs font-bold mb-4 block">Perfect Harmony</span>
                         <h3 className="text-4xl md:text-5xl font-decorative text-white mb-8">The Sommelier's Reserve</h3>
@@ -273,7 +274,7 @@ const MenuPage: React.FC = () => {
                             <button className="px-12 py-4 bg-transparent border border-gold-500 text-gold-500 font-bold tracking-widest uppercase hover:bg-gold-500 hover:text-midnight transition-all duration-300">
                                 View Wine List
                             </button>
-                             <button className="px-12 py-4 border border-white/20 text-white font-bold tracking-widest uppercase hover:border-gold-500 hover:text-gold-500 transition-all duration-300">
+                            <button className="px-12 py-4 border border-white/20 text-white font-bold tracking-widest uppercase hover:border-gold-500 hover:text-gold-500 transition-all duration-300">
                                 Botanical Elixirs
                             </button>
                         </div>
