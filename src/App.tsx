@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { HashRouter, Routes, Route, useLocation } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import LandingPage from './pages/LandingPage';
 import AboutPage from './pages/AboutPage';
@@ -18,7 +18,7 @@ const ScrollToTop = () => {
 
 const App: React.FC = () => {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <ScrollToTop />
       <div className="min-h-screen bg-midnight text-gold-100 font-sans selection:bg-gold-500 selection:text-midnight">
         <Navbar />
@@ -29,7 +29,7 @@ const App: React.FC = () => {
           <Route path="/reserve" element={<ReservationPage />} />
         </Routes>
       </div>
-    </HashRouter>
+    </BrowserRouter>
   );
 };
 
