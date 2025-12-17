@@ -63,6 +63,7 @@
 - 📜 **Interactive Menu** - Category-based filtering
 - 👨‍🍳 **Chef Showcase** - Team profiles with hover effects
 - 💬 **Testimonials** - Customer reviews section
+- 📅 **Reservations** - Multi-step booking flow
 - 📍 **Contact & Hours** - Restaurant information
 
 </td>
@@ -88,7 +89,8 @@
 │   ├── 📁 pages/
 │   │   ├── 📄 LandingPage.tsx     # Homepage with hero, stats, features
 │   │   ├── 📄 AboutPage.tsx       # Chef profiles & restaurant story
-│   │   └── 📄 MenuPage.tsx        # Full vegetarian menu
+│   │   ├── 📄 MenuPage.tsx        # Full vegetarian menu
+│   │   └── 📄 ReservationPage.tsx # Multi-step booking form
 │   │
 │   ├── 📄 App.tsx                 # Root component with routing
 │   ├── 📄 main.tsx                # React entry point
@@ -174,6 +176,7 @@ http://localhost:5173
 | 🏠 **Home** | `/` | Hero, signature dishes, features, testimonials |
 | 📖 **About** | `/about` | Restaurant story, philosophy, chef profiles |
 | 🍽️ **Menu** | `/menu` | Full vegetarian menu with tasting experience |
+| 📅 **Reserve** | `/reserve` | Multi-step table reservation & dining policies |
 
 ---
 

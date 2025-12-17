@@ -336,7 +336,7 @@ const PrivateEvents = () => (
 
 const LandingPage: React.FC = () => {
   return (
-    <div className="w-full bg-midnight">
+    <div className="w-full bg-midnight overflow-x-hidden">
       <Hero />
       <Stats />
       <SignatureDishes />

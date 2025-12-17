@@ -44,7 +44,7 @@ const ReservationPage: React.FC = () => {
     const occasions = ['Anniversary', 'Birthday', 'Business Meal', 'Date Night', 'Celebration', 'Other'];
 
     return (
-        <div className="min-h-screen bg-midnight w-full text-gold-100 flex flex-col">
+        <div className="min-h-screen bg-midnight w-full text-gold-100 flex flex-col overflow-x-hidden">
             {/* Header with increased padding to prevent overlap */}
             <div className="pt-48 pb-24 flex items-center justify-center border-b border-white/5 relative bg-emerald-950/20">
                 <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-5"></div>

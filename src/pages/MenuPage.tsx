@@ -239,7 +239,7 @@ const MenuPage: React.FC = () => {
 
 
     return (
-        <div className="w-full bg-midnight">
+        <div className="w-full bg-midnight overflow-x-hidden">
             <MenuHero />
             <div className="container mx-auto px-6 py-24 relative">
                 {/* Decorative Vertical Line */}
