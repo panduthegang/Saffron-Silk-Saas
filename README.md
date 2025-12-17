@@ -6,7 +6,7 @@
 
 *A premium, vegetarian-focused restaurant website with stunning dark aesthetics and gold accents*
 
-[![Live Demo](https://img.shields.io/badge/Live-Demo-gold?style=for-the-badge&logo=vercel&logoColor=white)](https://saffron-silk-saas.vercel.app)
+[![Live Demo](https://img.shields.io/badge/Live-Demo-gold?style=for-the-badge&logo=vercel&logoColor=white)](https://saffron-silk-by-harsh.vercel.app)
 [![GitHub](https://img.shields.io/badge/GitHub-Repo-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/panduthegang/Saffron-Silk-Saas)
 [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 
